@@ -1,0 +1,50 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+
+    <p>Bievenido</p>
+
+
+    <p>Para ingresar a una entrevista por favor indice
+    el código de la entrevista:
+
+
+
+    <div>
+    <input id='codigo' placeholder='Código'></>
+    <p>
+    <button id='ingresar'>Ingresar</button>
+    </div>
+
+
+
+    <script>
+      var boton = document.getElementById('ingresar');
+      var input = document.getElementById('codigo');
+
+      boton.onclick = function() {
+      
+        if (input.value.length > 7) {
+          window.location = "http://198.211.105.46:9000/entrevista/" + input.value + "/";
+        } else {
+          alert("El código es inválido")
+        }
+      }
+
+
+
+    </script>
+
+    <p> 
+    <a href='http://198.211.105.46:9000/admin'>Abrir administrador</a>
+
+
+
+
+
+  <body>
+</html>
